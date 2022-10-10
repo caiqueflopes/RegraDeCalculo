@@ -1,0 +1,87 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+       
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header card-header-info">
+                    <h4 class="card-title">Negociação do contrato</h4>
+                    <p class="card-category"> </p>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-3">
+                              <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="#{{NumeroContrato}}" disabled>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-3">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>Nome</mat-label>
+                                    <input matInput disabled placeholder="" name="name" value="{{NomeUser}}">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-3">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>Data vencimento</mat-label>
+                                    <input matInput disabled placeholder="" name="venc" value="{{DataVencCont}}">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-3">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>Valor R$ </mat-label>
+                                    <input matInput disabled placeholder="" name="valor" value="{{ValorContrato}}">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class=" text-primary">
+                                            <th>Numero da Parcela</th>
+                                            <th>Valor</th>
+                                            <th>Data Vencimento</th>
+                                            <th>Juros</th>
+                                            <th>Desconto</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="text-info">1020,00</td>
+                                                <td>11/03/2018</td>
+                                                <td>110.22</td>  
+                                                <td>22.00</td>                                    
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="text-info">1020,00</td>
+                                                <td>11/04/2018</td>  
+                                                <td>12</td>  
+                                                <td>22.00</td>   
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="text-info">1020,00</td>
+                                                <td>11/05/2018</td> 
+                                                <td>56.22</td>  
+                                                <td>32.00</td>    
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button mat-raised-button type="submit" class="btn btn-success pull-right">Gerar</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div>
