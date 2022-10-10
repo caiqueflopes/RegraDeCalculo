@@ -23,7 +23,7 @@ And: npm start
 ------------------------------------------------
 BACK
 .NetFramework 5.0
-
+-----------------------------------------------
 	INICIALIZAÇÃO-----------
 	intalar nuget EntityFrameworkCore.Design(version 5.0)
 	intalar nuget EntityFrameworkCore.Sqlite(version 5.0)
@@ -33,6 +33,7 @@ BACK
 		PARA CRIAR MIGAÇÃO-----------------
 			EXECUTAR dotnet ef migrations add InitialCreation
 		DPS DA MIGRAÇÃO CRIADA-------------
- 			EXECUTAR dotnet ef migrations add NovoCampoData
+			EXECUTAR dotnet ef migrations add NovoCampoData
 			EXECUTAR dotnet ef database update
 			EXECUTAR dotnet watch run
+-------------------------------------------------------
